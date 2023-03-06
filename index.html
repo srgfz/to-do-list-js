@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>To-Do List DAW</title>
+
+	<link rel="shortcut icon" href="images/lista.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<section class="container" id="container">
+		<header class="header">
+			<span class="header__title">To-Do List DAW</span>
+			<hr>
+		</header>
+
+		<!-- Configuración de la tarea -->
+		<section class="configure">
+			<span class="configure__title">Configuración Tarea</span>
+			<hr>
+
+			<!-- Formulario para la descripción y para la fecha -->
+			<form action="" class="form">
+				<label for="text" class=form__label>Descripción tarea</label>
+				<input type="text" id="texttask" class="form__text" placeholder="Introduce la descripción de la tarea">
+				<small class="error" id="errortext">&nbsp;</small>
+
+				<label for="text" class=form__label>Fecha y hora tarea</label>
+				<input type="datetime-local" id="datetask" class="form__text">
+				<small class="error" id="errordate"> &nbsp; </small>
+			</form>
+
+			<!-- Divs para la prioridad y button para crear la tarea -->
+			<section id="buttons" class="buttons">
+				<label for="text" class=form__label>Prioridad tarea</label>
+				<!-- Observa las clases para el color de fondo y los id  -->
+				<!-- Observa que los colores son divs y añadir tarea es un button  -->
+				<div id="red" class="buttons__task red"></div>
+				<div id="orange" class="buttons__task orange"></div>
+				<div id="green" class="buttons__task green"></div>
+
+				<button id="btnaniadir" class="buttons__aniadir">
+					<span class="buttons__text">Añadir Tarea</span>
+				</button>
+				<small class="error" id="errorcolor"> &nbsp;</small>
+			</section>
+		</section>
+
+		<section class="tasks" id="tasks">
+			<span class="tasks__title">Lista Tareas Pendientes</span>
+			<hr>
+			<!-- Aquí se añaden las tareas -->
+		</section>
+
+	</section>
+	<script src="./js/script.js"></script>
+</body>
+
+</html>

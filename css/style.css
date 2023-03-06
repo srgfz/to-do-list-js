@@ -1,0 +1,173 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #252b46;
+	font-family: sans-serif;
+	margin-top: 4rem;
+}
+
+.container {
+	margin: 10px auto;
+	max-width: 980px;
+	border: 1px dotted gray;
+	border-radius: 0.25em;
+	padding: 20px;
+}
+
+.configure,
+.tasks,
+.header {
+	background-color: rgba(255, 255, 255, 0.08);
+	padding: 1rem;
+	border-radius: 0.25rem;
+	margin-bottom: 1rem;
+}
+
+.form__label {
+	display: block;
+	color: #ddd;
+	margin-bottom: 0.2rem;
+	font-variant: small-caps;
+	margin-top: 1rem;
+}
+
+.form__text {
+	display: block;
+	padding: 0.6rem;
+	width: 100%;
+	border-radius: 0.25rem;
+}
+
+/* Para los botones de los colores y para el botón de añadir */
+.buttons {
+	cursor: pointer;
+	margin-top: 1rem;
+}
+
+.buttons__task,
+.buttons__aniadir {
+	width: 3rem;
+	height: 3rem;
+	border: 1px solid gray;
+	display: inline-block;
+	border-radius: 0.35rem;
+	margin-right: 0.5rem;
+}
+
+.red {
+	background-color: #e53935;
+}
+
+.orange {
+	background-color: #ffc107;
+}
+
+.green {
+	background-color: #4caf50;
+}
+
+.buttons__aniadir {
+	width: 78%;
+	float: right;
+	background-color: #5368df;
+	text-align: center;
+}
+
+.buttons__aniadir:hover {
+	border: 2px solid rgb(224, 224, 224);
+}
+
+.buttons__text,
+.tasks__title,
+.configure__title,
+.header__title {
+	display: block;
+	color: white;
+	font-variant: small-caps;
+	margin-top: 0.3rem;
+}
+
+.border {
+	border: 4px solid rgb(224, 224, 224);
+}
+
+/* Colores para los errores tanto de la funente del texto del error como para
+el color de fondo del input */
+
+.error {
+	color: red;
+	font-weight: bold;
+	font-size: 0.9rem;
+}
+
+.errorinput {
+	background-color: rgba(228, 176, 175, 0.171);
+	color: white;
+	font-weight: bold;
+}
+
+.tasks {
+	padding-top: 0.3rem;
+}
+
+.tasks__title,
+.configure__title,
+.header__title {
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+/* Estilos para las tareas que creamos */
+
+/* Clase contenedora de las tareas que se van creando */
+
+.containertask {
+	border: 1px dotted gray;
+	color: white;
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 0.25rem;
+	border: 2px solid gray;
+	overflow: hidden;
+}
+
+.containertask__text {
+	float: left;
+	margin-left: 2rem;
+	font-variant: small-caps;
+	font-size: 1.1rem;
+}
+
+.containertask__text--description {
+	width: 60%;
+}
+
+.containertask__text--crono {
+	width: 25%;
+	text-align: right;
+	letter-spacing: 0.02rem;
+}
+
+.containertask__checkbox {
+	float: left;
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+.containertask__img {
+	float: right;
+	height: 1.2em;
+	width: 1.2em;
+}
+
+.containertask__img:hover {
+	height: 1.4em;
+	width: 1.4em;
+	cursor: pointer;
+}
+
+.display__none {
+	display: none;
+}
